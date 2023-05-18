@@ -129,8 +129,9 @@ function revealMystery(mysteryObject) {
     const { suspect, weapon, room } = mysteryObject;
     console.log(`${suspect.firstName} ${suspect.lastName} killed Mr. Boddy using the ${weapon.name} in the ${room.name}!`);
       
-    // Call the revealMystery function with the mysteryObject
-    revealMystery(mysteryObject);
 }
+
+//Executing function - Call the revealMystery function with the mysteryObject 
+revealMystery(mysteryObject);
 
 

@@ -124,14 +124,19 @@ console.log(mysteryObject);
 // ITERATION 3
 
 function revealMystery(mysteryObject) {
-   
-    // By destructuring the object, we can directly access the nested properties of the mysteryObject without having to use dot notation or repeated object access. 
-    const { suspect, weapon, room } = mysteryObject;
-    console.log(`${suspect.firstName} ${suspect.lastName} killed Mr. Boddy using the ${weapon.name} in the ${room.name}!`);
+
+// By destructuring the object, we can directly access the nested properties of the mysteryObject without having to use dot notation or repeated object access. 
+        const { suspect, weapon, room } = mysteryObject;
+        return `${suspect.firstName} ${suspect.lastName} killed Mr. Boddy using the ${weapon.name} in the ${room.name}!`;
       
 }
 
-//Executing function - Call the revealMystery function with the mysteryObject 
-revealMystery(mysteryObject);
+//Executing function and returning an object - Call the revealMystery function with the mysteryObject 
+//revealMystery(mysteryObject);
+
+// Call the revealMystery function with the mysteryObject and capture the returned string
+const mysteryRevelation = revealMystery(mysteryObject);
+console.log(mysteryRevelation);
+
 
 

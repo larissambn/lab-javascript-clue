@@ -125,6 +125,7 @@ console.log(mysteryObject);
 
 function revealMystery(mysteryObject) {
    
+    // By destructuring the object, we can directly access the nested properties of the mysteryObject without having to use dot notation or repeated object access. 
     const { suspect, weapon, room } = mysteryObject;
     console.log(`${suspect.firstName} ${suspect.lastName} killed Mr. Boddy using the ${weapon.name} in the ${room.name}!`);
       
